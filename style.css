@@ -1,0 +1,8 @@
+#send-container{
+    position: absolute;
+    left: 35%;
+    top: 75%;
+}
+#message-container{
+    border: 1px solid red;
+}
