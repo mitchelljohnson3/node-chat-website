@@ -1,4 +1,4 @@
-const socket = io('http://localhost');
+const socket = io();
 
 socket.on('chat-message', data => {
     console.log(data);
