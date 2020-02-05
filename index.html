@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Chat App</title>
-    <link rel="stylesheet" href="./style.css">
     <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
     <script defer src="./script.js"></script>
 </head>
@@ -16,4 +15,14 @@
         <button type="submit" id="send-button" style="height: 30px; width: 100px;">Send</button>
     </form>
 </body>
+<style>
+    #send-container{
+        position: absolute;
+        left: 35%;
+        top: 75%;
+    }
+    #message-container{
+        border: 1px solid red;
+    }    
+</style>
 </html>

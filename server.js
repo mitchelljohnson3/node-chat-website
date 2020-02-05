@@ -1,6 +1,11 @@
-const io = require('socket.io')(3000)
+const http = require('http')
 
-io.on('connection', socket => {
-    console.log('new-user');
-    socket.emit('chat-message', 'Hello World')
-})
+http.createServer( (request, response) => {
+    response.writeHead(200, {
+        'Content-Type': 'text/plain'
+    })
+
+    response.write(request.url)
+
+    response.end()
+}).listen(1337)
