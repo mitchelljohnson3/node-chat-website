@@ -1,11 +1,9 @@
-const http = require('http')
+const http = require('http');
 
-http.createServer( (request, response) => {
-    response.writeHead(200, {
-        'Content-Type': 'text/plain'
-    })
+const requestListener = function (req, res) {
+  res.writeHead(200);
+  res.end('hello world');
+}
 
-    response.write(request.url)
-
-    response.end()
-}).listen(1337)
+const server = http.createServer(requestListener);
+server.listen(8000);
