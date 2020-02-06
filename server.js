@@ -10,8 +10,8 @@ express.get('/', function(req, res){
 express.get('/assets/style.css', function(req, res){
   res.sendFile(__dirname + '/assets/style.css')
 })
-express.get('/assets/script.js', function(req, res){
-  res.sendFile(__dirname + '/assets/script.js')
+express.get('/assets/client.js', function(req, res){
+  res.sendFile(__dirname + '/assets/client.js')
 })
 // ==============================================
 

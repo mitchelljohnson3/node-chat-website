@@ -13,7 +13,10 @@
 
 ##usage
 #start server
--`npm run start`
+-`npm start`
+
+#dev start server
+-`npm run dev`
 
 #port
 -3000
